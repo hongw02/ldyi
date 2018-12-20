@@ -1,0 +1,650 @@
+body, html {
+
+    height: 100%;
+    font-family: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+div {
+    overflow: hidden;
+}
+
+ul, li ol, li {
+    list-style: none
+}
+
+
+a, a:link, a:focus {
+
+    text-decoration: none;
+    color: white;
+}
+
+
+#background_cover ul {
+    height: 85px;
+    line-height: 85px;
+}
+
+
+#background_cover ul li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#background_cover li a {
+    height: 100%;
+    padding: 0 14px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.div1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 1140px) {
+    [class*="div1"] {
+        width: 1140px;
+    }
+
+    body {
+
+    }
+
+}
+
+@media only screen and (max-height: 640px) {
+    [class*="div1"] {
+        height: 640px;
+    }
+
+}
+
+
+#background_video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+#background_cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.activenav {
+    background: #ff7800;
+}
+
+#video_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navcontain a:hover {
+    background: #ff7800;
+    color: white;
+}
+
+
+.dlapp {
+    background: url('../img/xiazai.png') no-repeat center center;
+    background-size: contain;
+    height: 100%;
+    width: 12%;
+    margin: auto;
+}
+
+.dlapp:hover {
+
+}
+
+.dlapp:hover .erweima {
+
+    left: 30%;
+    width: 14%;
+    top: 10%;
+
+    animation: mymove 1s;
+    animation-iteration-count: 1;
+    -webkit-animation: mymove 1s;
+    -webkit-animation-iteration-count: 1;
+
+    transition: width 1s;
+    -moz-transition: width 1s; /* Firefox 4 */
+    -webkit-transition: width 1s; /* Safari 和 Chrome */
+    -o-transition: width 1s;
+}
+
+.erweima {
+    width: 0;
+    left: 44%;
+    top: 50%;
+
+}
+
+
+@keyframes mymove {
+    from {
+        left: 44%;
+        top: 50%;
+    }
+    to {
+        left: 30%;
+        top: 10%;
+    }
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    from {
+        left: 44%;
+        top: 50%;
+    }
+    to {
+        left: 30%;
+        top: 10%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.drop {
+    display: block;
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    opacity: 1;
+    animation: mydrop 1500ms;
+    animation-iteration-count: 1;
+    -webkit-animation: mydrop 1500ms;
+}
+
+
+.up {
+    padding-left: 2px;
+    display: block;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    opacity: 1;
+    animation: myup 1500ms;
+    -webkit-animation: myup 1500ms;
+
+}
+
+@keyframes myup {
+    from {
+
+        top: 93%;
+        opacity: 0.5;
+    }
+    to {
+
+        top: 83%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myup /*Safari and Chrome*/
+{
+    from {
+        opacity: 0.5;
+        top: 50%;
+    }
+    to {
+        opacity: 1;
+        top: 10%;
+    }
+}
+
+@keyframes mydrop {
+    from {
+        top: 15%;
+        opacity: 0.5;
+    }
+    to {
+        top: 53%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mydrop /*Safari and Chrome*/
+{
+    from {
+        top: 15%;
+        opacity: 0.5;
+    }
+    to {
+        top: 53%;
+        opacity: 1;
+    }
+}
+
+.leftIn {
+    display: block;
+    position: absolute;
+    top: 83%;
+    left: 58%;
+    opacity: 1;
+    animation: myleftIn 1500ms;
+    -webkit-animation: myleftIn 1500ms;
+
+}
+
+.rightIn {
+    display: block;
+    position: absolute;
+    top: 73%;
+    left: 58%;
+    opacity: 1;
+    animation: myrightIn 1500ms;
+    -webkit-animation: myrightIn 1500ms;
+
+}
+
+@keyframes myrightIn {
+    from {
+        left: 90%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+@keyframes myleftIn {
+    from {
+        left: 25%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myrightIn /*Safari and Chrome*/
+{
+    from {
+        left: 90%;
+        opacity: 0.5;
+    }
+    to {
+        left: 60%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myleftIn /*Safari and Chrome*/
+{
+    from {
+        left: 25%;
+        opacity: 0.5;
+    }
+    to {
+        left: 60%;
+        opacity: 1;
+    }
+}
+
+.drop1 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    opacity: 1;
+    animation: mydrop1 1500ms;
+    animation-iteration-count: 1;
+    -webkit-animation: mydrop1 1500ms;
+}
+
+
+.up1 {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 69%;
+    left: 72%;
+    opacity: 1;
+    animation: myup1 1500ms;
+    -webkit-animation: myup1 1500ms;
+
+
+}
+
+
+@keyframes myup1 {
+    from {
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg); /* Firefox 4 */
+        -webkit-transform: rotate(180deg); /* Safari and Chrome */
+        -o-transform: rotate(180deg);
+        left: 80%;
+        opacity: 0.5;
+    }
+    to {
+        transition: width 2s, height 2s;
+        -moz-transition: width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+        -o-transition: width 2s, height 2s, -o-transform 2s; /* Opera */
+        left: 72%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myup1 /*Safari and Chrome*/
+{
+    from {
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg); /* Firefox 4 */
+        -webkit-transform: rotate(180deg); /* Safari and Chrome */
+        -o-transform: rotate(180deg);
+        left: 87%;
+        opacity: 0.5;
+    }
+    to {
+        transition: width 2s, height 2s;
+        -moz-transition: width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+        -o-transition: width 2s, height 2s, -o-transform 2s; /* Opera */
+        left: 72%;
+        opacity: 1;
+    }
+}
+
+@keyframes mydrop1 {
+    from {
+
+        top: 5%;
+        opacity: 0.5;
+    }
+    to {
+
+        top: 30%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mydrop1 /*Safari and Chrome*/
+{
+    from {
+        top: 5%;
+        opacity: 0.5;
+    }
+    to {
+        top: 30%;
+        opacity: 0.5;
+    }
+}
+
+.leftIn1 {
+    display: block;
+    position: absolute;
+    top: 63%;
+    left: 20%;
+    opacity: 1;
+    animation: myleftIn1 1500ms;
+    -webkit-animation: myleftIn1 1500ms;
+
+}
+
+.rightIn1 {
+    display: block;
+    position: absolute;
+    top: 73%;
+    left: 20%;
+    opacity: 1;
+    animation: myrightIn1 1500ms;
+    -webkit-animation: myrightIn1 1500ms;
+
+}
+
+@keyframes myrightIn1 {
+    from {
+        left: 40%;
+        opacity: 0.5;
+    }
+    to {
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+@keyframes myleftIn1 {
+    from {
+        left: 0;
+        opacity: 0.5;
+    }
+    to {
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myrightIn1 /*Safari and Chrome*/
+{
+    from {
+        left: 40%;
+        opacity: 0.5;
+    }
+    to {
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myleftIn1 /*Safari and Chrome*/
+{
+    from {
+        left: 0;
+        opacity: 0.5;
+    }
+    to {
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+.drop2 {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    opacity: 1;
+    animation: mydrop2 1500ms;
+    animation-iteration-count: 1;
+    -webkit-animation: mydrop2 1500ms;
+}
+
+
+.up2 {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    opacity: 1;
+    animation: myup2 1500ms;
+    -webkit-animation: myup2 1500ms;
+
+
+}
+
+.leftIn2 {
+    display: block;
+    position: absolute;
+    top: 63%;
+    left: 58%;
+    opacity: 1;
+
+
+    animation: myrightIn2 1500ms;
+    -webkit-animation: myrightIn2 1500ms;
+}
+
+.rightIn2 {
+    display: block;
+    position: absolute;
+    top: 73%;
+    left: 58%;
+    opacity: 1;
+    animation: myleftIn2 1500ms;
+    -webkit-animation: myleftIn2 1500ms;
+}
+
+
+@keyframes myup2 {
+    from {
+        top: 100%;
+        opacity: 0.5;
+    }
+    to {
+        top: 55%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myup2 /*Safari and Chrome*/
+{
+    from {
+        top: 100%;
+        opacity: 0.5;
+    }
+    to {
+        top: 55%;
+        opacity: 1;
+    }
+}
+
+@keyframes mydrop2 {
+    from {
+        top: -10%;
+        opacity: 0.5;
+    }
+    to {
+        top: 25%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mydrop2 /*Safari and Chrome*/
+{
+    from {
+        top: 5%;
+        opacity: 0.5;
+    }
+    to {
+        top: 30%;
+        opacity: 0.5;
+    }
+}
+
+@keyframes myrightIn2 {
+    from {
+        left: 88%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+@keyframes myleftIn2 {
+    from {
+        left: 28%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myrightIn2 /*Safari and Chrome*/
+{
+    from {
+        left: 88%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myleftIn2 /*Safari and Chrome*/
+{
+    from {
+        left: 28%;
+        opacity: 0.5;
+    }
+    to {
+        left: 58%;
+        opacity: 1;
+    }
+}
+
+.bottom1 li a {
+    height: 100%;
+    display: block;
+    color: #fff;
+}
+
+.bottom1 .tie {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom1 li {
+    padding: 7px;
+    color: white;
+    font-size: 14px;
+}
+
+.bottom1 ol {
+    float: left;
+}
+
+.bottom1 ol li {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btlist li {
+
+
+    text-align: right;
+}
+
+.btlist {
+    padding: 0 0 0 12%;
+}
+
+#bcent li {
+    float: left;
+}
+

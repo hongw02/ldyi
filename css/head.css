@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+}
+.head a {
+    text-decoration: none;
+    color: inherit;
+}
+div, p, td {
+    word-break: break-all;
+}
+ul, li ol, li {
+    list-style: none
+}
+.head a, a:link,a:visited,a:hover, a:focus {
+
+    text-decoration: none;
+    color: inherit;
+    background: inherit;
+}
+
+/*head start*/
+.head {
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.head_auto {
+    width: 1226px;
+    height: 84px;
+    margin: 0 auto;
+}
+.head .head_nav, .head .head_nav .nav_list {
+    float: left;
+}
+.head .logo {
+    float: left;
+    display: block;
+    margin: 22px 32px 0 0;
+}
+.head a:visited {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.head .head_nav .nav_list li a {
+    height: 85px;
+    line-height: 85px;
+    padding: 0 25px;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    float: left;
+}
+.head .head_nav .nav_list li a:hover, .head .head_nav .nav_list li a.active {
+    background: #fa851b;
+    color: #fff;
+}
+
+.head .head_nav .nav_list li {
+    float: left;
+}
+.head .head_app {
+    float: right;
+}
+.head .head_app ul li:hover {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.head .head_app ul li {
+    height: 85px;
+    line-height: 85px;
+    float: left;
+    padding: 0 25px;
+    cursor: pointer;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+.head .head_app ul li .down_app {
+    width: 100%;
+    height: 148px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 75px;
+    right: -1px;
+    z-index: 9999;
+    background: #fff;
+    display: none;
+}
+.head .head_app ul li:hover .down_app {
+    width: 100%;
+    height: 148px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 75px;
+    right: -1px;
+    z-index: 9999;
+    background: #fff;
+    display: block;
+}
+.head .head_app ul li .down_app img {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 13px auto 0 auto;
+
+}
+.head .head_app ul li .down_list {
+    background: #fff;
+    display: none;
+}
+.head .head_app ul li .down_tel {
+    width: 227px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 75px;
+    right: -1px;
+    background: #fff;
+    z-index: 9999;
+    display: none;
+}
+.head .head_app ul li:hover .down_tel {
+    width: 227px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 75px;
+    right: -1px;
+    background: #fff;
+    z-index: 9999;
+    display: block;
+}
+.head .head_app ul li .down_tel span.text {
+    text-align: right;
+    color: #333;
+}
+.head .head_app ul li .down_tel span {
+    width: 50%;
+    float: left;
+    display: block;
+}
+.head .head_app ul li .down_tel span.num {
+    color: #ff7800;
+}
+.mainbody .mainlist ul.suitlist li .desc .style {
+    margin-top: 5px;
+    color: #666;
+    font-size: 14px;
+}

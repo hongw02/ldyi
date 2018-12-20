@@ -1,0 +1,232 @@
+
+.mainbody {
+    width: 1226px;
+    margin: auto;
+}
+
+.mainbody .breadcrumb {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    margin-left: -6px;
+}
+
+.mainbody .breadcrumb a.first {
+    border-color: #fff;
+}
+
+.mainbody .breadcrumb a {
+    padding: 4px 6px;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    font-size: 16px;
+    color: #9a9a9a;
+}
+
+.mainbody .breadcrumb i.split {
+    color: #ccc;
+    background: url(https://pc-img.ihomefnt.com/wsssss.png) no-repeat;
+    width: 7px;
+    height: 12px;
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.mainbody .search-params .head {
+    margin: 10px 0 14px 0;
+    border-bottom: 1px solid #eee;
+    height: auto !important;
+}
+
+.mainbody .search-params .head .name {
+    color: #ff7800;
+    font-size: 16px;
+    padding-left: 2px;
+}
+
+.mainbody ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mainbody .search-params .body ul li {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #eee !important;
+    margin-top: -1px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    overflow: hidden;
+}
+
+.mainbody .search-params .body ul li .type-name {
+    width: 90px;
+    height: 40px;
+    padding-left: 10px;
+    background: #f3f3f3;
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+
+.mainbody .search-params .body .search_items .content {
+    margin-left: -20px !important;
+}
+
+.mainbody .search-params .body ul li .content {
+    float: left;
+    width: 900px;
+    padding-right: 117px;
+    word-break: keep-all;
+    margin-bottom: -30px;
+    max-height: 133px;
+    overflow: hidden;
+}
+
+.mainbody .search-params .body .search_items .content a {
+    margin: 0 0 0 40px !important;
+}
+
+.mainbody .search-params .body ul li .content a {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #00589c;
+}
+
+.mainbody .sortway {
+    margin-top: 14px;
+    height: 44px;
+    color: #333;
+    border: 1px solid #eee;
+}
+
+.mainbody .sortway .pager {
+    margin-top: 14px;
+    margin-right: 16px;
+    float: right;
+    height: 12px;
+    font-size: 14px;
+}
+
+.mainbody .sortway .sort-param {
+    line-height: 44px;
+}
+
+
+.mainbody .sortway .sort-param .comprehen, .mainbody .sortway .sort-param .price, .mainbody .sortway .sort-param .sales, .mainbody .sortway .sort-param .time {
+    position: relative;
+    height: 44px;
+    top: -1px;
+    padding: 0px 16px;
+    text-align: center;
+    margin-left: -1px;
+    display: inline-block;
+    color: #333;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.mainbody .sortway .sort-param .active {
+    color: #fff;
+    background: #ff7800;
+    border-color: #ff7800;
+}
+
+.mainbody .mainlist {
+    overflow: hidden;
+    clear: both;
+}
+
+.mainbody .mainlist ul {
+    margin-left: -14px;
+    overflow: hidden;
+    display: block;
+
+
+}
+
+.mainbody .mainlist ul.suitlist li {
+    height: 260px;
+}
+
+.mainbody .mainlist ul li {
+    border: 1px solid #f0f0f0;
+    float: left;
+    width: 280px;
+    margin-left: 14px;
+    margin-top: 14px;
+    overflow: hidden;
+    padding: 7px 7px 0 7px;
+}
+
+.mainbody .mainlist ul.suitlist li .desc {
+    margin-top: 12px;
+    padding: 0px 8px;
+}
+
+.mainbody .mainlist ul.suitlist li .desc .name {
+    font-size: 16px;
+    color: #666;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    font-weight: 700;
+}
+
+.mainbody .mainlist ul.suitlist li .desc .price {
+    margin-top: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.mainbody .mainlist .pagination {
+    float: right;
+    overflow: hidden;
+    clear: both;
+    margin-top: 30px;
+}
+
+
+.pagination .prev  {
+    display: inline-block;
+    color: #ccc;
+    margin-right: 3px;
+}
+
+.pagination .num  {
+    display: inline-block;
+    color: #ccc;
+    margin-right: 3px;
+}
+
+.mainbody .sortway .pager .current {
+    color: #ff7800;
+}
+
+.pagination .prev .num{
+    width: 34px;
+    height: 31px;
+    border: 1px solid #e0e0e0;
+    color: #666;
+    line-height: 31px;
+    text-align: center;
+}
+.pagination .active {
+    color: #fff;
+    background: #ff7800;
+    border-color: #ff7800;
+}

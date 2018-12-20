@@ -1,0 +1,69 @@
+
+
+$(function() {
+
+	/**
+	 * video宽、高自适应
+	 */
+	var setVideoHeight = function() {
+		var $video = $('.videoHeight');
+		$video.width($(window).width()).height($(window).height());
+	}
+	setVideoHeight();
+	
+	$(window).resize(function() {
+		setVideoHeight();
+	})
+
+	$('.nextAnima').on('click',function() {
+		var videoTop = $('.video').height();
+		console.log(videoTop);
+		$('body,html').animate({
+			scrollTop: videoTop
+		}, 1000)
+	})
+	
+	var winHeight = $(window).height();
+	$(window).scroll(function() {
+
+		scrollTop = $(window).scrollTop();
+		// console.log(scrollTop);
+		if (Math.floor(winHeight / 2) + scrollTop >= $('.four_contents').offset().top) {
+            // $body.attr("id", "pg" + (i + 1))
+            console.log('1');
+        }
+
+	})
+
+	var $dialog_video = $('.dialog_video');
+	var $body_html = $('body, html');
+
+	var embed_html = '<embed id="embed" width="100%" height="100%" align="middle" play="true" loop="true" scale="noscale" wmode="opaque" devicefont="false" menu="true" allowscriptaccess="always" allowfullscreen="true" allowfullscreeninteractive="true" src=""/>';
+	$('.videoAbout li, .videoAbout li, .videoBtn a').on('click',function() {
+		var $videoSrc = $(this).attr('data-video');
+		if ($videoSrc != undefined) {
+			$('.player').append(embed_html);
+			console.log($videoSrc);
+			// $body_html.addClass('noScroll');
+			$('#embed').attr('src',$videoSrc)
+			$dialog_video.fadeIn();
+		}
+	});
+
+
+	// 关闭视频
+	$('.close').on('click', function() {
+		$("#embed").remove();
+		$dialog_video.hide();
+		// $body_html.removeClass('noScroll');
+	})
+
+	//限制字符个数
+$(".news .news_list ul li .right .text").each(function(){
+	var maxwidth=50;
+	if($(this).text().length>maxwidth){
+	$(this).text($(this).text().substring(0,maxwidth));
+	$(this).html($(this).html()+"...");
+	}
+});
+})
